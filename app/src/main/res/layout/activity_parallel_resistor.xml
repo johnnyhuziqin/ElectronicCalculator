@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation = "vertical">
+
+     
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation = "horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/parallelR1"
+        tools:context=".Resistor_divider" />
+    <EditText android:id="@+id/parallelR1_value"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/parallelR1Hint" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/parallelR2"
+        tools:context=".Resistor_divider" />
+    <EditText android:id="@+id/parallelR2_value"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/parallelR2Hint" />
+    
+</LinearLayout>
+
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation = "horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/parallelR3"
+        tools:context=".Resistor_divider" />
+    <EditText android:id="@+id/parallelR3_value"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/parallelR3Hint" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/parallelR4"
+        tools:context=".Resistor_divider" />
+    <EditText android:id="@+id/parallelR4_value"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/parallelR4Hint" />
+    
+</LinearLayout>
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation = "horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/parallelR5"
+        tools:context=".Resistor_divider" />
+    <EditText android:id="@+id/parallelR5_value"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/parallelR5Hint" />
+    
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation = "horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/parallelRp"
+        tools:context=".Resistor_divider" />
+    <EditText android:id="@+id/parallelRp_value"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/parallelRpHint" />
+    
+</LinearLayout>    
+    
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation = "horizontal">
+    <Button
+        android:id="@+id/btn_calculate_para"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Calculate"
+         />
+    <Button
+        android:id="@+id/btn_clr_para"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Clear"
+         />
+    
+    <Button
+        android:id="@+id/btn_ret_para"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Return"
+         />
+    
+</LinearLayout>    
+
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/r2" >
+
+    </FrameLayout>
+        
+</LinearLayout>

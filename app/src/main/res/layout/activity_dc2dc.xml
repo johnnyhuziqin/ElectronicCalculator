@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation = "vertical">
+
+     
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation = "horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/DcDcRefVol"
+        tools:context=".Resistor_divider" />
+    <EditText android:id="@+id/et_DcDcRefVol"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/DcDcRefVolHint" />
+    
+</LinearLayout>
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation = "horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/DcDcR1"
+        tools:context=".Resistor_divider" />
+    <EditText android:id="@+id/et_DcDcR1"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/DcDcR1Hint" />
+    
+</LinearLayout>
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation = "horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/DcDcR2"
+        tools:context=".Resistor_divider" />
+    <EditText android:id="@+id/et_DcDcR2"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/DcDcR2Hint" />
+    
+</LinearLayout>
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation = "horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/DcDcVo"
+        tools:context=".Resistor_divider" />
+    <EditText android:id="@+id/et_DcDcVo"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/DcDcVoHint" />
+    
+</LinearLayout>
+    
+    
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation = "horizontal">
+    <Button
+        android:id="@+id/btn_calculate_dcdc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Calculate"
+         />
+    <Button
+        android:id="@+id/btn_clr_dcdc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Clear"
+         />
+    
+    <Button
+        android:id="@+id/btn_ret_dcdc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Return"
+         />
+    
+</LinearLayout>    
+
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dc" >
+</FrameLayout>
+        
+</LinearLayout>

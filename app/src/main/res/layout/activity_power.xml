@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation = "vertical">
+
+    
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation = "horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/OutputVpp"
+        tools:context=".Resistor_divider" />
+    <EditText android:id="@+id/OutputVppValue"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/OutputVppHint" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/OutputVrms"
+        tools:context=".Resistor_divider" />
+    <EditText android:id="@+id/OutputVrmsValue"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/OutputVrmsHint" />
+    
+    
+</LinearLayout>
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation = "horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Impedance"
+        tools:context=".Resistor_divider" />
+    <EditText android:id="@+id/ImpedanceValue"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/ImpedanceHint" />
+    
+</LinearLayout>
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation = "horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/OutputPower"
+        tools:context=".Resistor_divider" />
+    <EditText android:id="@+id/OutputPowerValue"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/OutputPowerHint" />
+    
+</LinearLayout>
+
+   
+    
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation = "horizontal">
+    <Button
+        android:id="@+id/btn_calculate_power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Calculate"
+         />
+    <Button
+        android:id="@+id/btn_clr_power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Clear"
+         />
+    <Button
+        android:id="@+id/btn_ret_power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Return"
+         />
+    
+</LinearLayout>  
+
+ <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/power_tips"
+        tools:context=".Resistor_divider" />
+ 
+ <ListView android:id="@android:id/list"
+               android:layout_width="match_parent"
+               android:layout_height="0dip"
+               android:background="#0000FF"
+               android:layout_weight="1"
+               android:drawSelectorOnTop="false"/>
+ 
+ <TextView android:id="@android:id/empty"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="#000000"
+               android:text="No data"/>
+        
+</LinearLayout>
